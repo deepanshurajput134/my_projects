@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body class="p-0 m-0 box-border">
+<!-- header -->
+    <header class="bg-gray-200 text-gray-700 text-center text-2xl p-7 uppercase">Welcome to deep Editor</header>
+
+<!-- first fieldest -->
+    <fieldset class="w-6xl border h-[420px] mx-auto animate__animated animate__slideInLeft" id="code_box">
+        <legend>TYPE YOUR CODE HERE</legend>
+        <textarea name="" id="code" class="w-full h-full outline-none">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+        </html>            
+        </textarea>
+    </fieldset>
+
+<!-- second fieldset -->
+    <fieldset class="w-6xl border h-[420px] mx-auto hidden animate__animated animate__slideInRight" id="result_box">
+        <legend>RESULT YOUT CODE</legend>
+        <div id="result" class="h-full w-full scroll-auto overflow-scroll"></div>
+    </fieldset>
+
+<!-- buttons -->
+    <div class="w-full text-center mt-3">
+        <button onclick="run()" class="bg-blue-500 text-white px-2 py-1 rounded-lg mx-auto" id="rune_btn">RUNE CODE</button>
+        <button onclick="RETURN()" class="mx-auto bg-blue-500 text-white px-2 py-1 rounded-lg hidden" id="icone">RETURN TO CODE</button>
+    </div>    
+
+<script src="index.js"></script>
+
+</body>
+</html>
